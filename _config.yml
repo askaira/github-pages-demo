@@ -1,0 +1,39 @@
+
+# Sample Jekyll _config.yml
+
+title: My GitHub Pages Site
+description: A demo site for learning GitHub Pages with Jekyll
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # the base hostname & protocol
+
+# Theme settings
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Google Analytics
+google_analytics: UA-XXXXXXXXX-X
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
+# Includes
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+      toc: true
